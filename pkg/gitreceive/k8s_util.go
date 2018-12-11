@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/deis/builder/pkg/k8s"
+	"github.com/deiscc/builder/pkg/k8s"
 	"github.com/pborman/uuid"
 	"k8s.io/kubernetes/pkg/api"
 	apierrors "k8s.io/kubernetes/pkg/api/errors"
@@ -90,7 +90,7 @@ func dockerBuilderPod(
 	addEnvToPod(pod, "IMG_NAME", imageName)
 	addEnvToPod(pod, builderStorage, storageType)
 	// inject existing DEIS_REGISTRY_SERVICE_HOST and PORT info to dockerbuilder
-	// see https://github.com/teamhephy/dockerbuilder/issues/83
+	// see https://github.com/deiscc/dockerbuilder/issues/83
 	addEnvToPod(pod, "DEIS_REGISTRY_SERVICE_HOST", registryHost)
 	addEnvToPod(pod, "DEIS_REGISTRY_SERVICE_PORT", registryPort)
 

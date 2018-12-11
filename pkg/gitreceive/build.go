@@ -10,18 +10,17 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
-
-	"github.com/deis/builder/pkg/controller"
-	"github.com/deis/builder/pkg/git"
-	"github.com/deis/builder/pkg/k8s"
-	"github.com/deis/builder/pkg/storage"
-	"github.com/deis/builder/pkg/sys"
-	deisAPI "github.com/deis/controller-sdk-go/api"
-	"github.com/deis/controller-sdk-go/hooks"
-	"github.com/deis/pkg/log"
+        "gopkg.in/yaml.v2"
+	"github.com/deiscc/builder/pkg/controller"
+	"github.com/deiscc/builder/pkg/git"
+	"github.com/deiscc/builder/pkg/k8s"
+	"github.com/deiscc/builder/pkg/storage"
+	"github.com/deiscc/builder/pkg/sys"
+	deisAPI "github.com/deiscc/controller-sdk-go/api"
+	"github.com/deiscc/controller-sdk-go/hooks"
+	"github.com/deiscc/pkg/log"
 	"github.com/docker/distribution/context"
 	storagedriver "github.com/docker/distribution/registry/storage/driver"
-	"gopkg.in/yaml.v2"
 	"k8s.io/kubernetes/pkg/api"
 	client "k8s.io/kubernetes/pkg/client/unversioned"
 )
@@ -319,7 +318,7 @@ func build(
 
 	log.Info("Done, %s:v%d deployed to Workflow\n", appName, release)
 	log.Info("Use 'deis open' to view this application in your browser\n")
-	log.Info("To learn more, use 'deis help' or visit https://deis.com/\n")
+	log.Info("To learn more, use 'deis help' or visit https://deis.cc/\n")
 
 	run(repoCmd(repoDir, "git", "gc"))
 

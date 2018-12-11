@@ -14,7 +14,7 @@ import (
 	"sync"
 	"text/template"
 
-	"github.com/deis/pkg/log"
+	"github.com/deiscc/pkg/log"
 	"golang.org/x/crypto/ssh"
 )
 

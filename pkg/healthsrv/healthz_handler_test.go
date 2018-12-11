@@ -15,8 +15,7 @@ import (
 	"github.com/docker/distribution/context"
 
 	"github.com/arschles/assert"
-	"github.com/deis/builder/pkg/sshd"
-	"github.com/deis/controller-sdk-go"
+	"github.com/deiscc/builder/pkg/sshd"
 )
 
 var (

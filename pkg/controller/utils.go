@@ -3,9 +3,9 @@ package controller
 import (
 	"fmt"
 
-	"github.com/deis/builder/pkg/conf"
-	deis "github.com/deis/controller-sdk-go"
-	"github.com/deis/pkg/log"
+	"github.com/deiscc/builder/pkg/conf"
+	deis "github.com/deiscc/controller-sdk-go"
+	"github.com/deiscc/pkg/log"
 )
 
 // New creates a new SDK client configured as the builder.

@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/deis/builder/pkg/sys"
+	"github.com/deiscc/builder/pkg/sys"
 )
 
 const (

@@ -3,8 +3,8 @@ package healthsrv
 import (
 	"net/http"
 
-	"github.com/deis/builder/pkg/controller"
-	deis "github.com/deis/controller-sdk-go"
+	"github.com/deiscc/builder/pkg/controller"
+	deis "github.com/deiscc/controller-sdk-go"
 )
 
 // GetClient is an (*net/http).Client compatible interface that provides just the Get cross-section of functionality.

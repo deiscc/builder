@@ -7,8 +7,8 @@ package pkg
 import (
 	"fmt"
 
-	"github.com/deis/builder/pkg/sshd"
-	"github.com/deis/pkg/log"
+	"github.com/deiscc/builder/pkg/sshd"
+	"github.com/deiscc/pkg/log"
 )
 
 // Return codes that will be sent to the shell.
