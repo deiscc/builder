@@ -19,7 +19,7 @@ BINDIR := ./rootfs
 
 DEIS_REGISTRY ?= ${DEV_REGISTRY}/
 
-GOTEST := go test --race
+GOTEST := go test --race/Volumes/Users/duanhongyi/Source/workflow-tools/workflow-release/build/repo/builder/versioning.mk
 
 bootstrap:
 	${DEV_ENV_CMD} glide install
